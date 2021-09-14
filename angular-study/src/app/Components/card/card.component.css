@@ -1,0 +1,40 @@
+.container {
+  height: 400px;
+  width: 300px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  max-height: 70px;
+  max-width: 46px;
+}
+
+.like-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 0;
+}
+
+p {
+  text-align: center;
+}
+
+.cta-a {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 35px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
