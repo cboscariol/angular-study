@@ -10,8 +10,6 @@ export class CardComponent implements OnInit {
 
   meuFavorito: boolean = true
 
-
-
   constructor() { }
 
   ngOnInit(): void {
