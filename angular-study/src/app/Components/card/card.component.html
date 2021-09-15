@@ -2,13 +2,17 @@
   <img class="logo" src="{{item.logo}}" alt="logo-instagram">
   <h1>{{item.name}}</h1>
   <p>{{item.text}}</p>
-    <button class="like-button">
-      <img class="like-button"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/OOjs_UI_icon_heart.svg/1024px-OOjs_UI_icon_heart.svg.png" alt="like-button">
+    <button class="like-button" (click)='onClick()'>
+      <img class="like-button" *ngIf="meuFavorito" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/OOjs_UI_icon_heart.svg/1024px-OOjs_UI_icon_heart.svg.png" alt="like-button">
+      <ng-template [ngIf]=!meuFavorito>
+        <img class="like-button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/2224px-A_perfect_SVG_heart.svg.png" alt="">
+      </ng-template>
     </button>
     <a class="cta-a" href="https://www.instagram.com/">Saiba mais</a>
+
+
 
 </div>
 
 
-<!--  https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/2224px-A_perfect_SVG_heart.svg.png  -->
 

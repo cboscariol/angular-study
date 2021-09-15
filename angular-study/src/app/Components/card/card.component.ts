@@ -8,10 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() item: any
 
+  meuFavorito: boolean = true
+
+
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(){
+    this.meuFavorito = !this.meuFavorito
   }
 
 
