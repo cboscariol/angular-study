@@ -1,0 +1,10 @@
+
+<div>
+  <h1>{{dataObj.appTitle | uppercase }}</h1>
+  <span>{{dataObj.day | date: 'short'}}</span>
+  <h2>{{dataObj.createBy}}</h2>
+  <p>{{dataObj.valor | currency:'BRL'}}</p>
+  <p>{{dataObj.rate | number:'2.2'}}</p>
+
+  {{dataObj | json}}
+</div>

@@ -19,5 +19,12 @@ export class CardComponent implements OnInit {
     this.meuFavorito = !this.meuFavorito
   }
 
+  getColor(){
+    if(this.meuFavorito){
+      return "black"
+    } else {
+      return "blue"
+    }
+  }
 
 }

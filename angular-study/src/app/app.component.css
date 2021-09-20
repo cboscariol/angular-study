@@ -1,7 +1,12 @@
 .max-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   gap: 20px;
+}
+
+.align-card {
+  display: flex;
 }
