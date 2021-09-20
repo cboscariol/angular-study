@@ -1,6 +1,6 @@
 
 <div>
-  <h1>{{dataObj.appTitle | uppercase }}</h1>
+  <h1>{{dataObj.appTitle | lowercase | camelCase }}</h1>
   <span>{{dataObj.day | date: 'short'}}</span>
   <h2>{{dataObj.createBy}}</h2>
   <p>{{dataObj.valor | currency:'BRL'}}</p>

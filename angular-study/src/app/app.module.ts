@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CardComponent } from './Components/card/card.component';
 import { HeaderComponent } from './Components/header/header.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { HeaderComponent } from './Components/header/header.component';
     AppComponent,
     CardComponent,
     HeaderComponent,
+    CamelCasePipe,
   ],
   imports: [
     BrowserModule
