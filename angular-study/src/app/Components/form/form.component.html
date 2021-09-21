@@ -1,0 +1,14 @@
+<div>
+  <form #testForm="ngForm" (ngSubmit)="onSubmit(testForm.value)">
+    <label for="">Nome</label>
+    <input type="text" ngModel name="name" id="name">
+
+    <label for="">Idade</label>
+    <input type="text" ngModel name="idade" id="idade">
+
+    <label for="">Profissão</label>
+    <input type="text" ngModel name="profissao" id="profissao">
+
+    <button type="submit">SAVE</button>
+  </form>
+</div>
